@@ -1,0 +1,166 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+
+  <article>
+    {% if page.profile %}
+      <div
+        class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}"
+        style="{% if page.profile.align == 'left' %}margin-right: 30px;{% else %}margin-left: 30px;{% endif %}"
+      >
+        {% if page.profile.image %}
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1
+      rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+          {%
+            include figure.liquid
+            loading="eager"
+            path=profile_image_path
+            class=profile_image_class
+            alt=page.profile.image
+            cache_bust=true
+            max-width="230px"
+          %}
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info" style="margin-bottom: 0; padding-bottom: 0; line-height: 1;">{{ page.profile.more_info }}</div>
+        {% endif %}
+
+        {% if page.social %}
+          <div class="social" style="width: 85%; display: flex; justify-content: center; margin-top: -18px;">
+            <div class="contact-icons" style="font-size: 32px; display: flex; gap: 7px;">
+              {% include social.liquid %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="clearfix">{{ content }}</div>
+
+    <!-- News -->
+    {% if page.news and site.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    {% if page.simple_news %}
+      <style>
+        .news-link {
+          text-decoration: none;
+          color: inherit;
+        }
+        .news-link:hover {
+          text-decoration: underline;
+        }
+      </style>
+
+      <!-- Fancy Divider with Clickable News -->
+      <div style="display: flex; align-items: center; margin: 20px 0 10px;">
+        <a
+          href="{{ '/news/' | relative_url }}"
+          class="news-link"
+          style="font-size: 2.0em; margin-right: 10px;"
+          >News</a
+        >
+        <div style="flex-grow: 1; height: 1px; background-color: #ccc;"></div>
+      </div>
+
+      {% include simple_news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <style>
+        .selected-link {
+          text-decoration: none;
+          color: inherit;
+        }
+        .selected-link:hover {
+          text-decoration: underline;
+        }
+      </style>
+
+      <!-- Fancy Divider with Clickable Selected Publications -->
+      <div style="display: flex; align-items: center; margin: 30px 0 10px;">
+        <a
+          href="{{ '/publications/' | relative_url }}"
+          class="selected-link"
+          style="font-size: 2.0em; margin-right: 10px;"
+          >Selected Publications</a
+        >
+        <div style="flex-grow: 1; height: 1px; background-color: #ccc;"></div>
+      </div>
+
+      {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Selected Repo -->
+    {% if page.selected_repos %}
+      <style>
+        .repo-link {
+          text-decoration: none;
+          color: inherit;
+        }
+        .repo-link:hover {
+          text-decoration: underline;
+        }
+      </style>
+
+      <!-- Fancy Divider with Clickable Selected Repositories -->
+      <div style="display: flex; align-items: center; margin: 30px 0 10px;">
+        <a
+          href="{{ '/repositories/' | relative_url }}"
+          class="repo-link"
+          style="font-size: 2.0em; margin-right: 10px;"
+          >Selected Repositories</a
+        >
+        <div style="flex-grow: 1; height: 1px; background-color: #ccc;"></div>
+      </div>
+
+      {% include selected_repos.liquid %}
+    {% endif %}
+
+    <!-- Divider with Centered Text -->
+    <div style="display: flex; align-items: center; text-align: center; margin: 20px 0;">
+      <div style="flex: 1; border-bottom: 2px solid #dee2e6;"></div>
+      <span style="padding: 0 15px; font-size: 1.1rem;">GitHub Summary</span>
+      <div style="flex: 1; border-bottom: 2px solid #dee2e6;"></div>
+    </div>
+
+    <!-- Selected Repo -->
+    {% if page.github_summary %}
+      {% include github_summary.liquid %}
+    {% endif %}
+
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social" style="text-align: center;">
+        <div class="contact-icons" style="display: flex; justify-content: center; gap: 10px; font-size: 65px;">
+          {% include social.liquid %}
+        </div>
+        <div class="contact-note" style="margin-top: 10px;">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+  </article>
+</div>

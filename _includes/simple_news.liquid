@@ -1,0 +1,51 @@
+{% assign is_about_page = page.url == "/" or page.url contains "about" %}
+
+{% if is_about_page %}
+  <div class="scroll-box">
+{% endif %}
+
+<ul style="padding-left: 15px; margin-bottom: 0;">
+  {% for item in site.data.simple_news %}
+    <li>
+      <span style="display: inline-block; width: 72px;">[{{ item.date }}]</span>
+      {{ item.content }}
+    </li>
+  {% endfor %}
+</ul>
+
+{% if is_about_page %}
+  </div>
+
+  <style>
+    .scroll-box {
+      max-height: 200px;
+      overflow-y: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      line-height: 1.4;
+    }
+
+    .scroll-box::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    .scroll-box:hover::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .scroll-box::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .scroll-box::-webkit-scrollbar-thumb {
+      background-color: #999;
+      border-radius: 4px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    .scroll-box::-webkit-scrollbar-thumb:hover {
+      background-color: #666;
+    }
+  </style>
+{% endif %}

@@ -1,0 +1,47 @@
+- date: "2025/04"
+  content: "I served as a reviewer for MICCAI 2025."
+
+- date: "2025/02"
+  content: "Two papers have been accepted at CVPR 2025."
+
+- date: "2025/02"
+  content: "Our paper is presented at WACV 2025. <a href='https://www.linkedin.com/posts/menoori_wacv2025-domaingeneralization-computervision-activity-7302546715591540736-ngWN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4GY_QBBYBC8lrVhvyh8z8KmWz3aVWTSTU' target='_blank'>Check out my post!</a>"
+
+- date: "2025/01"
+  content: "I served as a reviewer for CVPR 2025."
+
+- date: "2025/01"
+  content: "Three papers have been accepted at WACV 2025, including one oral presentation. <a href='https://www.linkedin.com/posts/menoori_wacv2025-activity-7257789554907049984-Q6PF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4GY_QBBYBC8lrVhvyh8z8KmWz3aVWTSTU' target='_blank'>Check out my post!</a>"
+
+- date: "2024/12"
+  content: I participated in and presented our paper at NeurIPS 2024.
+
+- date: "2024/09"
+  content: "Our paper <a href='https://neurips.cc/virtual/2024/poster/96685' target='_blank'>WATT: Weight Average Test Time Adaptation of CLIP</a> is accepted at NeurIPS 2024. <a href='https://www.linkedin.com/posts/menoori_neurips2024-activity-7245195214074630144-KpGl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4GY_QBBYBC8lrVhvyh8z8KmWz3aVWTSTU' target='_blank'>Check out my post!</a>"
+
+- date: "2024/02"
+  content: "Our paper <a href='https://openaccess.thecvf.com/content/CVPR2024/html/Osowiechi_NC-TTT_A_Noise_Constrastive_Approach_for_Test-Time_Training_CVPR_2024_paper.html' target='_blank'>NC-TTT: A Noise-Contrastive Approach for Test-Time Training</a> has been accepted to CVPR 2024 as a highlight!"
+
+- date: "2023/12"
+  content: "<a href='https://www.sciencedirect.com/science/article/abs/pii/S003132032300910X' target='_blank'>TFS-ViT: Token-level feature stylization for domain generalization</a> is accepted at Pattern Recognition."
+
+- date: "2023/08"
+  content: "Our paper is accepted at ICCV 2023."
+
+- date: "2023/04"
+  content: "Successfully defended my PhD proposal and officially became a PhD candidate at ÉTS Montréal."
+
+- date: "2023/01"
+  content: "Our paper <a href='https://openaccess.thecvf.com/content/WACV2023/html/Osowiechi_TTTFlow_Unsupervised_Test-Time_Training_With_Normalizing_Flow_WACV_2023_paper.html' target='_blank'>TTTFlow: Unsupervised Test-Time Training With Normalizing Flow</a> is accepted at WACV 2023."
+
+- date: "2022/12"
+  content: "Successfully passed my doctoral written exam."
+
+- date: "2022/04"
+  content: "Successfully completed the DGA1005 course with an A+ grade."
+
+- date: "2022/01"
+  content: "I joined <a href='https://www.zebra.com/us/en.html' target='_blank'>Zebra Technologies</a> as a Machine Learning Researcher."
+
+- date: "2022/01"
+  content: "I joined ILLS/LIVIA lab under the supervisions of <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/cdesrosiers' target='_blank'>Prof. Desrosiers</a> and <a href='https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/ibenayed' target='_blank'>Prof. Ben Ayed</a> as a PhD student."

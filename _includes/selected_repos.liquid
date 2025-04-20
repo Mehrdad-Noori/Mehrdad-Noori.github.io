@@ -1,0 +1,30 @@
+<style>
+  .repositories {
+    gap: 5px !important; /* reduces space between cards */
+  }
+
+  .repositories .repo {
+    flex: 1 1 48%; /* or slightly more if you want tighter fit */
+    margin-bottom: 8px !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  @media (max-width: 768px) {
+    .repositories .repo {
+      flex: 1 1 100%; /* Stack on small screens */
+    }
+  }
+</style>
+
+<div class="news">
+  {% if site.data.repositories.selected_repos %}
+    {% assign repos = site.data.repositories.selected_repos %}
+    <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+      {% for repo in repos %}
+        {% if forloop.index > 4 %}{% break %}{% endif %}
+        {% include repository/repo.liquid repository=repo %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
