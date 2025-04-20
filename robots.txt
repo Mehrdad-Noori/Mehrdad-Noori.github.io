@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Mehrdad-Noori.github.io/sitemap.xml
+Sitemap: https://mehrdad-noori.github.io/sitemap.xml
