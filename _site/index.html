@@ -195,11 +195,19 @@
     .profile {
       float: none !important;
       margin: 0 auto 20px auto !important;
-      text-align: center;
-      display: block;
+      text-align: center !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 90%; /* or even smaller like 80% */
+    }
+    .profile img {
+      max-width: 200px; /* make the image smaller on mobile */
+      height: auto;
     }
     .profile .contact-icons {
       justify-content: center !important;
+      flex-wrap: wrap;
     }
   }
 </style>
