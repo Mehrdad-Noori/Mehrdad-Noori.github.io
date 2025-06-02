@@ -619,3 +619,14 @@ jsonresume:
   - languages
   - research interests
   - references
+
+responsive_images:
+  source: assets/images/publication
+  destination: assets/img/publication_preview
+  sizes:
+    - [480, "480w"]
+    - [800, "800w"]
+    - [1400, "1400w"]
+  formats:
+    - webp
+    - jpeg
