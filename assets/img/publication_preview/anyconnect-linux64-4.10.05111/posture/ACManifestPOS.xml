@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<vpn rev="1.0">
-  <file version="4.10.05111" id="Posture" is_core="no" type="script" action="install" module="posture">
-    <uri>binaries/anyconnect-linux64-4.10.05111-posture-webdeploy-k9.sh</uri>
-    <display-name>AnyConnect Posture</display-name>
-  </file>
-</vpn>
