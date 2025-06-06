@@ -26,6 +26,6 @@ I am a fourth-year PhD student in ILLS/LIVIA at [ÉTS Montreal](https://www.etsm
 
 My research centers on developing robust and adaptable visual intelligence systems, with a particular focus on vision-language models and generative architectures such as diffusion models. More specifically, my current focus is on addressing the challenge of domain shift through domain generalization and test-time adaptation methods. Through this research, I aim to deepen our understanding of how to make sure that deep learning models remain reliable when confronted with unfamiliar data distributions. I am also interested in video understanding and 3D vision, with the goal of building learning systems that generalize effectively across diverse, real-world scenarios.
 
-I also serve as a reviewer for leading AI conferences including CVPR, NeurIPS, and MICCAI.
+I also serve as a reviewer for leading AI conferences such as CVPR and NeurIPS.
 
 Prior to my PhD, I worked as a Machine Learning Engineer at [Sensifai](https://sensifai.com/), and later joined [Avitia](https://www.avitia.bio/) (previously known as Imagia Cybernetics) as a Research Intern, working under the supervision of Dr. [Mohammad Havaei](https://scholar.google.ca/citations?user=LAoMyyoAAAAJ&hl=en) on self-supervised learning.
