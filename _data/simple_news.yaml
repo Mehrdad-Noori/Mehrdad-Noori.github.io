@@ -1,8 +1,11 @@
+- data: "2026/01"
+  content: "I was invited to serve as a reviewer for CVPR 2026 and ECCV 2026." 
+  
 - date: "2025/12"
   content: "I presented our paper at NeurIPS 2025 in Mexico City! <a href='https://www.linkedin.com/posts/menoori_neurips2025-neurips2025-ai-activity-7405056690238271488-NJV5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4GY_QBBYBC8lrVhvyh8z8KmWz3aVWTSTU' target='_blank'>Check out my post!</a>"
 
 - date: "2025/11"
-  content: "Our paper Histopath-C is accepted to WACV 2026."
+  content: "Our paper <a href='https://arxiv.org/abs/2601.12493' target='_blank'>Histopath-C</a> is accepted to WACV 2026!"
 
 - date: "2025/10"
   content: "I am excited to share that I have joined <a href='https://locusx.ai' target='_blank'>LocusX.ai</a> as a Senior Machine Learning Research Engineer."
