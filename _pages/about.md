@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 github_summary: true
 ---
 
-I am a fourth-year PhD student in ILLS/LIVIA at [ÉTS Montreal](https://www.etsmtl.ca/), advised by Prof. [Christian Desrosiers](https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/cdesrosiers) and Prof. [Ismail Ben Ayed](https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/ibenayed). I also work as a Senior AI Research Engineer at [LocusX.ai](https://www.locusx.ai), where I focus on bringing AI-driven intelligence and agentic systems to game development to improve debugging and development efficiency.
+I recently completed my PhD in ILLS/LIVIA at [ÉTS Montreal](https://www.etsmtl.ca/), advised by Prof. [Christian Desrosiers](https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/cdesrosiers) and Prof. [Ismail Ben Ayed](https://www.etsmtl.ca/etudier-a-lets/corps-enseignant/ibenayed). I am a Senior AI Research Engineer at [LocusX.ai](https://www.locusx.ai) (Mila startup), where I focus on bringing AI-driven intelligence and agentic systems to game development to improve debugging and development efficiency.
 
 My research centers on developing robust and adaptable visual intelligence systems, with a particular focus on vision-language models and generative architectures such as diffusion models. More specifically, my current focus is on addressing the challenge of domain shift through domain generalization and test-time adaptation methods. Through this research, I aim to deepen our understanding of how to make sure that deep learning models remain reliable when confronted with unfamiliar data distributions.
 
